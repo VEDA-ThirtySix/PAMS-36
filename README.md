@@ -106,7 +106,7 @@
 
 ---
 
-### Client
+### Client(MVC Pattern)
 - **`model`**: DTO 및 SQL 데이터 처리  
 - **`view`**: UI 구성 및 사용자 입력 처리  
 - **`controller`**: 비즈니스 로직 관리  
