@@ -145,7 +145,8 @@
 #### 설치 환경으로 이동 및 패키지 설치
 ```sh
 - $ git clone https://github.com/VEDA-ThirtySix/RaspberryPi-5-RTSP-Server.git
-- $ ./setup.sh       # 패키지 설치 쉘 스크립트
+- $ chmod +x setup.sh # 설치 권한
+- $ ./setup.sh        # 패키지 설치 쉘 스크립트
 ```
 #### 빌드 및 실행
 > 설치환경으로 이동 및 각각의 디렉터리에 아래의 단계들을 각각 수행
@@ -155,8 +156,10 @@
 - $ make            # build
 - $ ./start.sh      # Run the Server Program
 ```
-#### 결과
-[사진 넣을 예정]
+### 결과
+plateSender, usrRecevier, rtspServer, rtspH264 총 4개 서버가 실행됨(터미널 4개 띄워짐)
+
+![20241213_08h50m13s_grim](https://github.com/user-attachments/assets/9c1e9ce6-0b81-413d-b4f1-b8d732b48e7a)
 
 ---
 <h1 id="Client"> 🔷  Client</h1>
@@ -174,8 +177,9 @@
 
 ## Qt Application(Client) UI
 [UI 넣을 예정]
+
 ## client 설치 및 실행 방법
-### Linux(Client)
+### Linux 환경 (Client)
 환경 업데이트 및 업그레이드
 ``` sh
 - $ sudo apt update
@@ -199,7 +203,7 @@
 - $ ./cctv_36.pro     //Run the Client Program
 ```
 
-### MacOS(Client)
+### MacOS 환경 (Client)
 환경 업데이트 및 업그레이드
 ```sh
 - $ brew update
@@ -212,7 +216,7 @@
 - $ ./download_packages
 ```
 #### 빌드 및 실행
-- 방법 1: Qt Creator로 실행
+- 방법 1: Qt Creator 실행
     > 프로젝트 파일(cctv_36.pro)을 `Qt Creator`에서 열고, 실행 버튼을 누릅니다.
 - 방법 2: 터미널로 실행
 ```sh
