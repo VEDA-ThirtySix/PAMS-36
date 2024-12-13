@@ -199,8 +199,6 @@ sudo apt -y upgrade
 설치 환경으로 이동 및 패키지 설치
 ``` sh
 git clone https://github.com/VEDA-ThirtySix/PAMS-36.git
-chmod +x download_packages
-./download_packages
 cd Client/cctv_36/ 
 ```
 빌드 및 실행
