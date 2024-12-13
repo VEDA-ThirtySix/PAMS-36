@@ -187,9 +187,10 @@ plateSender, usrRecevier, rtspServer, rtspH264 총 4개 서버가 실행됨(터�
 ```
 설치 환경으로 이동 및 패키지 설치
 ``` sh
-- $ git clone https://github.com/VEDA-ThirtySix/RaspberryPi-5-RTSP-Client.git
+- $ git clone https://github.com/VEDA-ThirtySix/PAMS-36.git
 - $ chmod +x download_packages
 - $ ./download_packages
+- $ cd Client/cctv_36/ 
 ```
 빌드 및 실행
 - 방법 1: Qt Creator로 실행
@@ -214,6 +215,7 @@ plateSender, usrRecevier, rtspServer, rtspH264 총 4개 서버가 실행됨(터�
 - $ git clone https://github.com/VEDA-ThirtySix/RaspberryPi-5-RTSP-Client.git
 - $ chmod +x download_packages
 - $ ./download_packages
+- $ cd Client/cctv_36/
 ```
 #### 빌드 및 실행
 - 방법 1: Qt Creator 실행
