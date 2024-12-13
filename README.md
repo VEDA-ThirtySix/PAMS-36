@@ -208,12 +208,7 @@ cd Client/cctv_36/
     > 프로젝트 파일(cctv_36.pro)을 `Qt Creator`에서 열고, 실행 버튼을 누릅니다.
 
 - 방법 2: 터미널로 실행
-```sh
-qmake           
-make clean
-make            # build
-./cctv_36.pro   # Run the Client Program
-```
+
 ### 서버 IP 주소 연결해주기 (꼭!!! 중요)
 ```sh
 vim main.cpp  # 또는 Qt creator에서 수정 가능
@@ -221,6 +216,14 @@ vim main.cpp  # 또는 Qt creator에서 수정 가능
 ```c++
 tcpManager.connectToServer("192.168.0.148", 8088);  # 여기서 서버 IP 주소로 수정하기
 ```
+
+```sh
+qmake           
+make clean
+make            # build
+./cctv_36   # Run the Client Program
+```
+
 
 ### MacOS 환경 (Client)
 환경 업데이트 및 업그레이드
@@ -239,19 +242,21 @@ cd Client/cctv_36/
 - 방법 1: Qt Creator 실행
     > 프로젝트 파일(cctv_36.pro)을 `Qt Creator`에서 열고, 실행 버튼을 누릅니다.
 - 방법 2: 터미널로 실행
-```sh
-qmake
-make clean
-make           //build
-cd cctv_36.app/Contents/MacOS
-./cctv_36.pro   //Run the Client Program
-```
+
 ### 서버 IP 주소 연결해주기 (꼭!!! 중요)
 ```sh
 vim main.cpp # 또는 Qt creator에서 수정 가능
 ```
 ```c++
 tcpManager.connectToServer("192.168.0.148", 8088);  # 여기서 서버 IP 주소로 수정하기
+```
+
+```sh
+qmake
+make clean
+make           //build
+cd cctv_36.app/Contents/MacOS
+./cctv_36   //Run the Client Program
 ```
 
 <h2 id="TEAM"> 👨‍👩‍👧‍👧  TEAM</h2>
