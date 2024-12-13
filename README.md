@@ -144,17 +144,17 @@
 ### Raspberrypi 5 (Server)
 #### 설치 환경으로 이동 및 패키지 설치
 ```sh
-- $ git clone https://github.com/VEDA-ThirtySix/RaspberryPi-5-RTSP-Server.git
-- $ chmod +x setup.sh # 설치 권한
-- $ ./setup.sh        # 패키지 설치 쉘 스크립트
+git clone https://github.com/VEDA-ThirtySix/RaspberryPi-5-RTSP-Server.git
+chmod +x setup.sh # 설치 권한
+./setup.sh        # 패키지 설치 쉘 스크립트
 ```
 #### 빌드 및 실행
 > 설치환경으로 이동 및 각각의 디렉터리에 아래의 단계들을 각각 수행
 > : plateSender, usrRecevier, rtspServer, rtspH264, tfliteRuntime 
 ```sh
-- $ make clean
-- $ make            # build
-- $ ./start.sh      # Run the Server Program
+make clean
+make            # build
+./start.sh      # Run the Server Program
 ```
 ### 결과
 plateSender, usrRecevier, rtspServer, rtspH264 총 4개 서버가 실행됨(터미널 4개 띄워짐)
@@ -182,15 +182,15 @@ plateSender, usrRecevier, rtspServer, rtspH264 총 4개 서버가 실행됨(터�
 ### Linux 환경 (Client)
 환경 업데이트 및 업그레이드
 ``` sh
-- $ sudo apt update
-- $ sudo apt -y upgrade
+sudo apt update
+sudo apt -y upgrade
 ```
 설치 환경으로 이동 및 패키지 설치
 ``` sh
-- $ git clone https://github.com/VEDA-ThirtySix/PAMS-36.git
-- $ chmod +x download_packages
-- $ ./download_packages
-- $ cd Client/cctv_36/ 
+git clone https://github.com/VEDA-ThirtySix/PAMS-36.git
+chmod +x download_packages
+./download_packages
+cd Client/cctv_36/ 
 ```
 빌드 및 실행
 - 방법 1: Qt Creator로 실행
@@ -198,35 +198,49 @@ plateSender, usrRecevier, rtspServer, rtspH264 총 4개 서버가 실행됨(터�
 
 - 방법 2: 터미널로 실행
 ```sh
-- $ qmake           
-- $ make clean
-- $ make            //build
-- $ ./cctv_36.pro     //Run the Client Program
+qmake           
+make clean
+make            # build
+./cctv_36.pro   # Run the Client Program
+```
+### 서버 IP 주소 연결해주기 (꼭!!! 중요)
+```sh
+vim main.cpp  # 또는 Qt creator에서 수정 가능
+```
+```c++
+tcpManager.connectToServer("192.168.0.148", 8088);  # 여기서 서버 IP 주소로 수정하기
 ```
 
 ### MacOS 환경 (Client)
 환경 업데이트 및 업그레이드
 ```sh
-- $ brew update
-- $ brew install qt5
+brew update
+brew install qt5
 ```
 설치 환경으로 이동 및 패키지 설치
 ```sh
-- $ git clone https://github.com/VEDA-ThirtySix/RaspberryPi-5-RTSP-Client.git
-- $ chmod +x download_packages
-- $ ./download_packages
-- $ cd Client/cctv_36/
+git clone https://github.com/VEDA-ThirtySix/RaspberryPi-5-RTSP-Client.git
+chmod +x download_packages
+./download_packages
+cd Client/cctv_36/
 ```
 #### 빌드 및 실행
 - 방법 1: Qt Creator 실행
     > 프로젝트 파일(cctv_36.pro)을 `Qt Creator`에서 열고, 실행 버튼을 누릅니다.
 - 방법 2: 터미널로 실행
 ```sh
-  - $ qmake
-  - $ make clean
-  - $ make           //build
-  - $ cd cctv_36.app/Contents/MacOS
-  - $ ./cctv_36.pro   //Run the Client Program
+qmake
+make clean
+make           //build
+cd cctv_36.app/Contents/MacOS
+./cctv_36.pro   //Run the Client Program
+```
+### 서버 IP 주소 연결해주기 (꼭!!! 중요)
+```sh
+vim main.cpp # 또는 Qt creator에서 수정 가능
+```
+```c++
+tcpManager.connectToServer("192.168.0.148", 8088);  # 여기서 서버 IP 주소로 수정하기
 ```
 
 <h2 id="TEAM"> 👨‍👩‍👧‍👧  TEAM</h2>
