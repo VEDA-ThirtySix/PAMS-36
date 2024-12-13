@@ -176,7 +176,18 @@ plateSender, usrRecevier, rtspServer, rtspH264 총 4개 서버가 실행됨(터�
 - 과거의 영상 기록을 날짜별로 조회하여 스트리밍 가능
 
 ## Qt Application(Client) UI
-[UI 넣을 예정]
+- 스트리밍 화면(초기화면)
+![스크린샷 2024-12-13 14-28-09](https://github.com/user-attachments/assets/ed492f7b-306f-4a11-b466-43dadfc453cf)
+
+- 데이터 검색 화면(입주자 정보)
+![스크린샷 2024-12-13 14-48-34](https://github.com/user-attachments/assets/afd28ea4-1d3b-443d-a555-0534faf05558)
+
+- 데이터 검색 화면(시간별 기록)
+![스크린샷 2024-12-13 14-51-24](https://github.com/user-attachments/assets/7846a99a-c282-4cd1-a943-88429d8ff907)
+
+- 클립 재생 화면
+![스크린샷 2024-12-13 14-59-30](https://github.com/user-attachments/assets/0fb82cb4-a2f7-4181-9430-f5bcdc633645)
+
 
 ## client 설치 및 실행 방법
 ### Linux 환경 (Client)
